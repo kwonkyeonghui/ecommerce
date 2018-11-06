@@ -8,6 +8,7 @@ import reducer from "./reducers";
 import { getAllProducts } from "./actions";
 import App from "./containers/App";
 import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const middleware = [thunk];
 if (process.env.NODE_ENV !== "production") {

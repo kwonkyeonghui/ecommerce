@@ -24,8 +24,13 @@ const Carousel = () => {
             alt="First slide"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>title</h5>
-            <p>subtitle</p>
+            <h2 class="caption-title">The Biggest</h2>
+            <h3 class="caption-subtitle">Sale</h3>
+            <p class="caption-text">
+              <a class="btn btn-dark" href="#">
+                Shop Now
+              </a>
+            </p>
           </div>
         </div>
         <div class="carousel-item">
