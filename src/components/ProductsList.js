@@ -42,7 +42,7 @@ const Divider = styled.div`
 `;
 
 const ProductsList = ({ title, children }) => (
-  <div>
+  <div class="container">
     <Section className="divider">
       <div class="container">
         <Divider>
@@ -54,7 +54,7 @@ const ProductsList = ({ title, children }) => (
     </Section>
     <div class="row">
       {children.map(productItem => (
-        <div class="col text-center">{productItem}</div>
+        <div class="col mb-5 text-center">{productItem}</div>
       ))}
     </div>
   </div>
