@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Product from "./Product";
 import CartItem from "./CartItem";
 import styled from "styled-components";
 

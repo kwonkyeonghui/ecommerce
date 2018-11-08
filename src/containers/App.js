@@ -74,42 +74,6 @@ const App = () => (
     <Carousel />
     <ProductsContainer />
     <CartContainer />
-    {/* <div class="container cart">
-      <div class="item">
-        <Thumbnail class="image">
-          <img
-            src={require(`../assets/images/product.jpg`)}
-            alt="..."
-            class="float-left"
-          />
-        </Thumbnail>
-        <div class="description">
-          <span>title </span>
-          <span>description </span>
-        </div>
-        <div class="quantity">
-          <button type="button" class="btn btn-primary plus-btn">
-            +
-          </button>
-          <input
-            type="text"
-            aria-label="quantity"
-            aria-describedby="quantity"
-            value="2"
-          />
-          <button type="button" class="btn btn-primary minus-btn">
-            -
-          </button>
-        </div>
-        <div class="price">$200</div>
-        <div class="total-price">$400</div>
-        <div class="actions">
-          <button type="button" class="btn btn-primary delete-btn">
-            X
-          </button>
-        </div>
-      </div>
-    </div> */}
   </div>
 );
 

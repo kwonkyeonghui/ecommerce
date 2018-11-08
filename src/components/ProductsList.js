@@ -42,7 +42,7 @@ const Divider = styled.div`
 `;
 
 const ProductsList = ({ title, children }) => (
-  <div class="container">
+  <div>
     <Section className="divider">
       <div class="container">
         <Divider>

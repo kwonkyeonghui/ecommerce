@@ -5,17 +5,20 @@ import { addToCart } from "../actions";
 import { getVisibleProducts } from "../reducers/products";
 import ProductItem from "../components/ProductItem";
 import ProductsList from "../components/ProductsList";
-
+import Pagination from "../components/Pagination";
 const ProductsContainer = ({ products, addToCart }) => (
-  <ProductsList title="TOP RATED PRODUCTS">
-    {products.map(product => (
-      <ProductItem
-        key={product.id}
-        product={product}
-        onAddToCartClicked={() => addToCart(product.id)}
-      />
-    ))}
-  </ProductsList>
+  <div class="container">
+    <ProductsList title="TOP RATED PRODUCTS">
+      {products.map(product => (
+        <ProductItem
+          key={product.id}
+          product={product}
+          onAddToCartClicked={() => addToCart(product.id)}
+        />
+      ))}
+    </ProductsList>
+    <Pagination />
+  </div>
 );
 
 ProductsContainer.propTypes = {
