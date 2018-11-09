@@ -30,5 +30,11 @@
     "title": "AirPods",
     "price": 1229.0,
     "inventory": 3
+  },
+  {
+    "id": 8,
+    "title": "Apple Watch",
+    "price": 2000.0,
+    "inventory": 3
   }
 ]

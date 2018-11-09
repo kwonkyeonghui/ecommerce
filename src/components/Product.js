@@ -24,7 +24,6 @@ const Product = ({ price, quantity, title }) => (
       <p class="card-text">
         &#36;
         {price}
-        {quantity ? ` x ${quantity}` : null}
       </p>
     </div>
   </div>

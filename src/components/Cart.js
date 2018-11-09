@@ -45,12 +45,6 @@ const Cart = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0;
   const nodes = hasProducts ? (
     products.map(product => (
-      // <Product
-      //   title={product.title}
-      //   price={product.price}
-      //   quantity={product.quantity}
-      //   key={product.id}
-      // />
       <CartItem product={product} />
     ))
   ) : (
@@ -58,7 +52,7 @@ const Cart = ({ products, total, onCheckoutClicked }) => {
   );
 
   return (
-    <div class="mx-5">
+    <div class="mx-5 container">
       <Section className="divider">
         <div class="container">
           <Divider class="text-left">
@@ -68,17 +62,18 @@ const Cart = ({ products, total, onCheckoutClicked }) => {
           </Divider>
         </div>
       </Section>
-      <div>{nodes}</div>
-      <p>
+      <div class="container">{nodes}
+      <p class="text-right">
         Total: &#36;
         {total}
       </p>
-      <button
+      <button class="float-right"
         onClick={onCheckoutClicked}
         disabled={hasProducts ? "" : "disabled"}
       >
         Checkout
       </button>
+      </div>
     </div>
   );
 };

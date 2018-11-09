@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import PropTypes from "prop-types";
 const Thumbnail = styled.div`
-  height: 160px;
-  width: 200px;
+  height: 120px;
+  width: 180px;
 
   img {
     width: 100%;
@@ -13,7 +13,7 @@ const Thumbnail = styled.div`
 
 const CartItem = ({ product }) => {
   return (
-    <div class="item">
+    <div class="item d-flex mb-4 justify-content-between align-items-center border-bottom pb-4">
       <Thumbnail class="image">
         <img
           src={require(`../assets/images/product.jpg`)}
@@ -30,6 +30,7 @@ const CartItem = ({ product }) => {
           +
         </button>
         <input
+          class="w-25 text-center border-0"
           type="text"
           aria-label="quantity"
           aria-describedby="quantity"
@@ -39,8 +40,7 @@ const CartItem = ({ product }) => {
           -
         </button>
       </div>
-      <div class="price">{product.price}</div>
-      <div class="total-price">{product.price * product.quantity}</div>
+      <div class="price">&#36;{product.price}</div>
       <div class="actions">
         <button type="button" class="btn btn-primary delete-btn">
           X
