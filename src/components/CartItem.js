@@ -26,7 +26,7 @@ const CartItem = ({ product }) => {
         <span>{product.price} </span>
       </div>
       <div class="quantity">
-        <button type="button" class="btn btn-primary plus-btn">
+        <button type="button" class="btn btn-light plus-btn">
           +
         </button>
         <input
@@ -36,13 +36,16 @@ const CartItem = ({ product }) => {
           aria-describedby="quantity"
           value={product.quantity}
         />
-        <button type="button" class="btn btn-primary minus-btn">
+        <button type="button" class="btn btn-light minus-btn">
           -
         </button>
       </div>
-      <div class="price">&#36;{product.price}</div>
+      <div class="price">
+        &#36;
+        {product.price}
+      </div>
       <div class="actions">
-        <button type="button" class="btn btn-primary delete-btn">
+        <button type="button" class="btn btn-link delete-btn">
           X
         </button>
       </div>

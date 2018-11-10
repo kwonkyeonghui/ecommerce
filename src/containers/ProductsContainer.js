@@ -5,7 +5,6 @@ import { addToCart } from "../actions";
 import { getVisibleProducts } from "../reducers/products";
 import ProductItem from "../components/ProductItem";
 import ProductsList from "../components/ProductsList";
-import Pagination from "../components/Pagination";
 const ProductsContainer = ({ products, addToCart }) => (
   <div class="container">
     <ProductsList title="TOP RATED PRODUCTS">
@@ -17,7 +16,6 @@ const ProductsContainer = ({ products, addToCart }) => (
         />
       ))}
     </ProductsList>
-    <Pagination />
   </div>
 );
 

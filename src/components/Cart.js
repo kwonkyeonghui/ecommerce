@@ -44,9 +44,7 @@ const Divider = styled.div`
 const Cart = ({ products, total, onCheckoutClicked }) => {
   const hasProducts = products.length > 0;
   const nodes = hasProducts ? (
-    products.map(product => (
-      <CartItem product={product} />
-    ))
+    products.map(product => <CartItem product={product} />)
   ) : (
     <em>Please add some products to cart.</em>
   );
@@ -62,17 +60,19 @@ const Cart = ({ products, total, onCheckoutClicked }) => {
           </Divider>
         </div>
       </Section>
-      <div class="container">{nodes}
-      <p class="text-right">
-        Total: &#36;
-        {total}
-      </p>
-      <button class="float-right"
-        onClick={onCheckoutClicked}
-        disabled={hasProducts ? "" : "disabled"}
-      >
-        Checkout
-      </button>
+      <div class="container">
+        {nodes}
+        <p class="text-right">
+          Total: &#36;
+          {total}
+        </p>
+        <button
+          class="btn btn btn-dark float-right"
+          onClick={onCheckoutClicked}
+          disabled={hasProducts ? "" : "disabled"}
+        >
+          Checkout
+        </button>
       </div>
     </div>
   );
